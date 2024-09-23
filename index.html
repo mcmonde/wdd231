@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Course Home Page</title>
+    <meta name="description" content="WDD 231 - This is the course home page of Mc Monde Meliton.">
+    <meta name="author" content="Mc Monde Meliton">
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Font Embed Code -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-mobile.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="head">
+        <div class="head">
+            <img src="images/profile-image.jpg" alt="profile image" />
+            <h1>Mc Monde Meliton</h1>
+        </div>
+    </div>
+    <div class="container">
+        <nav>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="https://github.com/mcmonde" target="_blank">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/mc-monde/" target="_blank">LinkedIn</a></li>
+            </ul>
+            <div class="mobile-menu" aria-label="Mobile Menu">
+                <div class="hamburger" id="hamburgerMenu" aria-label="Toggle Navigation">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<main>
+    <section class="course">
+        <h1>Course Work</h1>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+    <section class="country">
+        <h1>Davao City, Philippines</h1>
+        <img class="country-image" src="images/brazzaville.jpg" alt="" />
+        <p>Majestic Philippine Eagle</p>
+    </section>
+    <section class="web">
+        <h1>Web and Computer Programming Certificate</h1>
+        <div class="wrap">
+            <div><button id="btnAll" type="button">ALL</button></div>
+            <div><button id="btnCse" type="button">CSE</button></div>
+            <div><button id="btnWdd" type="button">WDD</button></div>
+        </div>
+        <hr />
+        <div class="wrapp">
+            <button id="btnCse110" type="button">CSE 110</button>
+            <button id="btnWdd130" type="button">WDD 130</button>
+            <button id="btnCse111" type="button">CSE 111</button>
+            <button id="btnCse210" type="button">CSE 210</button>
+            <button id="btnWdd131" type="button">WDD131</button>
+            <button id="btnWdd231" type="button">WDD 231</button>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>© <span id="currentYear"></span> Mc Monde Meliton, Philippines</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+</footer>
+</body>
+</html>
