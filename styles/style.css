@@ -163,6 +163,10 @@ main h2 {
 #buttons-container button.active {
     background-color: #133788FF;
 }
+#total-credits {
+    margin-bottom: 1em;
+    text-align: center;
+}
 #courses-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

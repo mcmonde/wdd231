@@ -131,10 +131,12 @@ document.addEventListener('DOMContentLoaded', function() {
             <p><span class="credits">Credits:</span> ${course.credits}</p>
             <p>${course.description}</p>
             <p class="technology">Technologies: ${course.technology.join(', ')}</p>
-            <hr>
-        `;
+            <hr>`;
+
             coursesContainer.appendChild(courseDiv);
         });
+
+        calculateTotalAndCompletedCredits();
     }
 
     function filterCourses(subject) {
@@ -144,6 +146,23 @@ document.addEventListener('DOMContentLoaded', function() {
             const filteredCourses = courses.filter(course => course.subject === subject);
             displayCourses(filteredCourses);
         }
+    }
+
+    function calculateTotalAndCompletedCredits() {
+        let totalCredits = 0;
+        let completedCredits = 0;
+
+        courses.forEach(course => {
+            totalCredits += course.credits; // Sum total credits
+
+            if (course.completed) {
+                completedCredits += course.credits; // Sum completed credits
+            }
+        });
+
+        let totalCreditsDiv = document.getElementById('total-credits');
+        totalCreditsDiv.innerHTML = `
+            <p><i>Total Credits (Completed Courses):</i> ${completedCredits}/${totalCredits}</p>`;
     }
 
     generateDynamicButtons();
