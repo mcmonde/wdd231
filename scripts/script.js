@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
             technology: [
                 'Python'
             ],
-            completed: false
+            completed: true
         },
         {
             subject: 'WDD',
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'HTML',
                 'CSS'
             ],
-            completed: false
+            completed: true
         },
         {
             subject: 'CSE',
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
             technology: [
                 'Python'
             ],
-            completed: false
+            completed: true
         },
         {
             subject: 'CSE',
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
             technology: [
                 'C#'
             ],
-            completed: false
+            completed: true
         },
         {
             subject: 'WDD',
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'CSS',
                 'JavaScript'
             ],
-            completed: false
+            completed: true
         },
         {
             subject: 'WDD',
@@ -92,4 +92,60 @@ document.addEventListener('DOMContentLoaded', function() {
             completed: false
         }
     ]
+
+    function getDistinctSubjects() {
+        const subjects = courses.map(course => course.subject);
+        return ['ALL', ...new Set(subjects)];
+    }
+
+    function generateDynamicButtons() {
+        const buttonsContainer = document.getElementById('buttons-container');
+        const subjects = getDistinctSubjects();
+
+        subjects.forEach(subject => {
+            const button = document.createElement('button');
+            button.textContent = subject;
+            button.onclick = () => filterCourses(subject);
+            buttonsContainer.appendChild(button);
+        })
+    }
+
+    function displayCourses(filteredCourses) {
+        const coursesContainer = document.getElementById('courses-container');
+        coursesContainer.innerHTML = '';
+
+        filteredCourses.forEach(course => {
+            const courseDiv = document.createElement('div');
+            courseDiv.className = 'course-card';
+
+            if (course.completed) {
+                courseDiv.style.backgroundColor = '#fff9e6';
+                courseDiv.style.borderLeftColor = '#ffc107';
+            } else {
+                courseDiv.style.backgroundColor = '#edf2f7';
+                courseDiv.style.borderLeftColor = '#718096';
+            }
+
+            courseDiv.innerHTML = `
+            <h3>${course.title} (${course.subject} ${course.number})</h3>
+            <p><span class="credits">Credits:</span> ${course.credits}</p>
+            <p>${course.description}</p>
+            <p class="technology">Technologies: ${course.technology.join(', ')}</p>
+            <hr>
+        `;
+            coursesContainer.appendChild(courseDiv);
+        });
+    }
+
+    function filterCourses(subject) {
+        if (subject === 'ALL') {
+            displayCourses(courses);
+        } else {
+            const filteredCourses = courses.filter(course => course.subject === subject);
+            displayCourses(filteredCourses);
+        }
+    }
+
+    generateDynamicButtons();
+    displayCourses(courses);
 });
