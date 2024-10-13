@@ -48,14 +48,16 @@ function buildList(members) {
 }
 
 // Function to create a destination card
-function createDestinationCard(destination) {
+function createDestinationCard(member) {
     return `
             <div class="destination-card">
-                <img src="${destination.imageUrl}" alt="${destination.name}">
+                <img src="${member.imageUrl}" alt="${member.name}">
                 <div class="details">
-                    <h3>${destination.name}</h3>
-                    <p>Location: ${destination.place}</p>
-                    <p>Type: ${destination.type}</p>
+                    <h3>${member.name}</h3>
+                    <p>Location: ${member.address}</p>
+                    <p>Type: ${member.type}</p>
+                    <p>Phone: ${member.phone}</p>
+                    <p>website: <a href="${member.website}" target="_blank">${member.website.replace(/^https?:\/\//, '').replace(/\/.*$/, '').replace(/\/+$/, '')}</a></p>
                 </div>
             </div>
         `;
