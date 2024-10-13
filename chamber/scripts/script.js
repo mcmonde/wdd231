@@ -1,13 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const navMenu = document.getElementById('navMenu');
-    const hamburgerMenu = document.getElementById('hamburgerMenu');
     const currentYear = document.getElementById('currentYear');
     const lastModifiedDate = document.getElementById('lastModified');
 
-    // Toggle mobile menu
-    hamburgerMenu.addEventListener('click', function () {
-        navMenu.classList.toggle('active');
-    });
 
     // Update current year and last modified date
     currentYear.textContent = new Date().getFullYear();
@@ -83,46 +77,6 @@ document.addEventListener('DOMContentLoaded', function() {
         },
     ];
 
-    const destinationSelect = document.getElementById('destination');
-    const destinationTypeFilter = document.getElementById('destinationType');
-    const destinationContainer = document.getElementById('destinationContainer');
-
-    // Function to create a destination card
-    function createDestinationCard(destination) {
-        return `
-            <div class="destination-card">
-                <img src="${destination.imageUrl}" alt="${destination.name}">
-                <div class="details">
-                    <h3>${destination.name}</h3>
-                    <p>Location: ${destination.place}</p>
-                    <p>Type: ${destination.type}</p>
-                </div>
-            </div>
-        `;
-    }
-
-    // Populate destination dropdown
-    if (destinationSelect) {
-        destinations.forEach(destination => {
-            const option = document.createElement('option');
-            option.value = destination.name;
-            option.textContent = destination.name;
-            destinationSelect.appendChild(option);
-        });
-    }
-
-    // Display destinations
-    function displayDestinations() {
-        if (destinationTypeFilter) {
-            const selectedType = destinationTypeFilter.value;
-            const filteredDestinations = selectedType === 'all'
-                ? destinations
-                : destinations.filter(destination => destination.type === selectedType);
-            if (destinationContainer) {
-                destinationContainer.innerHTML = filteredDestinations.map(createDestinationCard).join('');
-            }
-        }
-    }
 
     // Initialize carousel
     function initializeCarousel() {
@@ -174,27 +128,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Initial display and setup
-    displayDestinations();
     initializeCarousel();
-
-    // Additional logic for filter highlight and other features
-    if (destinationTypeFilter) {
-        destinationTypeFilter.addEventListener('change', function() {
-            destinationTypeFilter.classList.add('option-highlight');
-            setTimeout(() => destinationTypeFilter.classList.remove('option-highlight'), 300);
-            displayDestinations();
-        });
-    }
-
-    const visitsElement = document.querySelector(".numberOfTimes");
-    let numberOfVisits = Number(localStorage.getItem("visit-times")) || 0;
-
-    if (numberOfVisits > 0) {
-        visitsElement.textContent = `You have visited this site ${numberOfVisits} times.`;
-    } else {
-        visitsElement.textContent = `This is your first visit. Welcome!`;
-    }
-
-    numberOfVisits++;
-    localStorage.setItem("visit-times", numberOfVisits);
 });
