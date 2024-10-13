@@ -62,14 +62,18 @@ function createDestinationCard(member) {
             </div>
         `;
 }
-const iconElement = document.getElementById('icon');
 
-// Toggle between 'view_module' and 'view_list' on click
-iconElement.addEventListener('click', () => {
-    if (iconElement.innerText === 'view_module') {
-        iconElement.innerText = 'view_list';
-    } else {
-        iconElement.innerText = 'view_module';
+document.getElementById('icon').addEventListener('click', function() {
+    const mainElement = document.querySelector('main');
+
+    if (window.innerWidth > 768) {
+        mainElement.classList.toggle('list-view');
+
+        if (mainElement.classList.contains('list-view')) {
+            this.textContent = 'view_module';
+        } else {
+            this.textContent = 'view_list';
+        }
     }
 });
 
