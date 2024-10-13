@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Haribon Chamber of Commerce</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta name="description" content="WDD 231 - Dynamic Web Fundamentals Course week06 Website Project">
+    <meta name="author" content="Mc Monde Meliton">
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Font Embed Code -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-mobile.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="images/logo/haribon.webp" alt="haribon logo">
+            <div>
+                <h1>Haribon</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-menu" id="navMenu">
+                <li class="active"><a href="index.html" >Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="form.html">Join</a></li>
+                <li><a href="form.html">Discover</a></li>
+            </ul>
+            <div class="mobile-menu" aria-label="Mobile Menu">
+                <div class="hamburger" id="hamburgerMenu" aria-label="Toggle Navigation">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<main>
+    <!-- Carousel Section -->
+    <section class="carousel">
+        <div class="carousel-inner" id="carouselInner">
+            <!-- Carousel items will be dynamically inserted here -->
+        </div>
+        <div class="carousel-control prev" id="prevSlide">&lt;</div>
+        <div class="carousel-control next" id="nextSlide">&gt;</div>
+    </section>
+
+</main>
+<footer>
+    <p>© <span id="currentYear"></span> Mc Monde Meliton, Philippines</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+</footer>
+</body>
+</html>

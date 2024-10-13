@@ -1,0 +1,87 @@
+:root {
+    --primary-color: #22577A;
+    --secondary-color: #1B3172;
+    --accent1-color: #CED5E3;
+    --accent2-color: #1C3F80;
+
+    --heading-font: "Oswald", arial;
+    --paragraph-font: "Open Sans", sans-serif;
+
+    --nav-background-color: #CED5E3;
+    --nav-link-color: #1C3F80;
+    --nav-hover-link-color: #fff;
+    --nav-hover-background-color: #1C3F80;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main div {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+p {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+footer {
+    grid-column: 1 / 3;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+}
+footer p {
+    color: var(--heading-font);
+}
+img {
+    max-width: 100%; /* Ensures the image scales with the container */
+    height: auto;    /* Keeps the image's aspect ratio */
+    display: block;  /* Removes any space below the image */
+    margin: 1rem 0;  /* Adds spacing around the image */
+}
