@@ -62,7 +62,16 @@ function createDestinationCard(member) {
             </div>
         `;
 }
+const iconElement = document.getElementById('icon');
 
+// Toggle between 'view_module' and 'view_list' on click
+iconElement.addEventListener('click', () => {
+    if (iconElement.innerText === 'view_module') {
+        iconElement.innerText = 'view_list';
+    } else {
+        iconElement.innerText = 'view_module';
+    }
+});
 
 (async () => {
     try {

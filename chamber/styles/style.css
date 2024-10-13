@@ -133,7 +133,6 @@ main .container {
 }
 #destinationType {
     border: 2px solid var(--primary-color);
-    border-radius: 5px;
     padding: 10px 15px;
     font-size: 16px;
     color: var(--primary-color);
@@ -163,7 +162,6 @@ main .container {
     max-width: 400px; /* Limit the max-width to 400px */
     margin: 20px auto; /* Center the carousel */
     overflow: hidden;
-    border-radius: 10px; /* Optional: Rounded corners for a cleaner look */
 }
 
 .carousel-inner {
@@ -213,7 +211,6 @@ main .container {
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #ddd;
-    border-radius: 8px;
     background-color: #f9f9f9;
 }
 
@@ -277,7 +274,6 @@ textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 4px;
     margin-bottom: 10px;
     resize: vertical;
 }
@@ -286,7 +282,6 @@ input[type="text"] {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 4px;
     margin-bottom: 10px;
 }
 
@@ -295,7 +290,6 @@ input[type="submit"] {
     color: #fff;
     padding: 10px 20px;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
@@ -315,6 +309,5 @@ input[type="submit"]:hover {
     text-align: center;
     padding: 20px;
     border: 1px solid #ccc; /* Optional: Add border for visibility */
-    border-radius: 8px; /* Optional: Add border radius for rounded corners */
     background-color: #f9f9f9; /* Optional: Add background color */
 }

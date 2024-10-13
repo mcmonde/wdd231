@@ -26,6 +26,7 @@
 
     <!-- Google Font Embed Code -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Link to your CSS file -->
     <link rel="stylesheet" href="styles/style.css">
@@ -35,6 +36,22 @@
 <!--    <script src="scripts/script.js" defer></script>-->
     <script src="scripts/menu.js" type="module"></script>
     <script src="scripts/directory.js" type="module"></script>
+
+    <style>
+        .icon {
+            font-size: 3em;
+            cursor: pointer;
+            color: #22577A;
+            margin: 4px;
+        }
+        .icon:hover {
+            font-size: 3em;
+            cursor: pointer;
+            color: white;
+            background: #22577A;
+            margin: 4px;
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -74,6 +91,8 @@
             <option value="Beaches and Coastal Areas">Beaches and Coastal Areas</option>
             <option value="Waterfalls and Rivers">Waterfalls and Rivers</option>
         </select>
+        <!-- Icon container -->
+        <span id="icon" class="material-icons icon">view_list</span>
     </div>
     <div class="container" id="destinationContainer"></div>
 </main>
