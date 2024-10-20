@@ -1,4 +1,4 @@
-:root {
+    :root {
     --primary-color: #22577A;
     --secondary-color: #1B3172;
     --accent1-color: #CED5E3;
@@ -76,7 +76,14 @@ nav {
     color: var(--nav-link-color);
 }
 li.active {
-  text-decoration: underline;
+    text-decoration: underline;
+    background: white;
+    padding: 8px 8px 22px 8px;
+    margin-bottom: -14px;
+}
+li.active a {
+    color: var(--primary-color);
+    font-weight: bold;
 }
 .mobile-menu {
     display: none;
