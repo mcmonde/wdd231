@@ -1,58 +1,157 @@
-.form-container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    background-color: #f9f9f9;
+/* Form */
+.join-container {
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    margin: 0 16px 0 16px;
 }
-.form-container label {
+.form-section,
+.membership-section {
+    width: clamp(300px, 100vw, 500px);
+    padding: 16px;
+    border-radius: 10px;
+}
+form {
+    display: grid;
+    margin: 1rem 2%;
+    text-align: left;
+}
+form label {
     display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
+    font-size: 0.8rem;
+    padding-top: 0.2rem;
 }
-.red-asterisk {
-    color: red;
+form h3 {
+    font-size: 0.9rem;
+    color: black;
+    margin: 1.5rem 0 0.2rem 0;
+    border-bottom: 1px solid #eee;
 }
-.optional {
-    color: #666;
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="date"],
+form input[type="email"],
+form select {
+    display: block;
+    margin: 0.1rem 0 1rem 0;
+    padding: 0.3rem;
+    border: 1px solid black;
+    border-left-width: 5px;
+    border-left-color: black;
+    font-size: 1rem;
+    color: gray;
+    width: 300px;
 }
-.error-message {
-    color: red;
-    font-size: 0.9em;
-    margin-top: 0.5em;
+form textarea {
+    border-radius: 4px;
+    border: 1px solid black;
+    width: calc(100% - 30px);
 }
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
-    resize: vertical;
+form textarea:focus {
+    outline: none;
 }
-input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
+form input[type="radio"] {
+    margin: 0.3rem;
 }
-input[type="submit"] {
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 10px 20px;
+
+form input:required {
+    border-left-color: red;
+}
+form input:focus {
+    border-left-color: skyblue;
+    outline: none;
+}
+form input:required:valid {
+    border-left-color: green;
+}
+
+form input[type="submit"] {
+    align-self: center;
     border: none;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-input[type="submit"]:hover {
-    background-color: var(--secondary-color);
-}
-.error-message {
-    color: red;
-    margin-bottom: 10px;
-}
-.acknowledgement-container {
     text-align: center;
-    padding: 20px;
-    border: 1px solid #ccc; /* Optional: Add border for visibility */
-    background-color: #f9f9f9; /* Optional: Add background color */
+    background-color: skyblue;
+    color: black;
+    padding: 0.75rem 1.5rem;
+    margin: 1rem;
+    font-size: 1rem;
+}
+.membership {
+    margin: 24px;
+    padding: 24px;
+    background-color: var(--primary-color);
+    animation: membership-appearance 1s 0.5s;
+    color: white;
+}
+.membership button {
+    border: none;
+    padding: 4px;
+    animation: button-appearance 1s 0.5s;
+}
+/* Style for the radio button group */
+.form-section h3 {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.form-section label {
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+/* Align radio buttons with labels */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.radio-item input[type="radio"] {
+    margin-right: 10px; /* Space between the radio button and label */
+}
+
+@keyframes membership-appearance {
+    0% {
+        margin: 96px 24px;
+        background-color: greenyellow;
+        opacity: 0.1;
+        color: black;
+    }
+    60% {
+        margin: 24px 24px;
+        opacity: 1;
+        background-color: skyblue;
+    }
+}
+@keyframes button-appearance {
+    0% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* Join Dialog*/
+#membership-dialog {
+    border-radius: 1rem;
+    border: 2px solid black;
+    animation: dialog-appearance 1s;
+}
+#membership-dialog button {
+    border-radius: 5px;
+    border: 1px solid black;
+}
+@keyframes dialog-appearance {
+    0% {
+        transform: scale(0.5);
+    }
+    60% {
+        transform: scale(1);
+    }
 }
