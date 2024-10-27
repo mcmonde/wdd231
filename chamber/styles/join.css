@@ -178,7 +178,7 @@ button:hover {
     width: 300px;
     padding: 20px;
     border: none;
-    border-radius: 8px;
+    border-radius: 4px;
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     z-index: 2;
