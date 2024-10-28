@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Haribon Chamber of Commerce Join page</title>
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="The Haribon Chamber of Commerce join page. Class Project for WDD 231.">
+    <meta name="author" content="Mc Monde Meliton">
+
+    <!-- Embed Data -->
+    <meta property="og:description" content="The Haribon Chamber of Commerce join page. Class Project for WDD 231.">
+    <meta property="og:image" content="https://mcmonde.github.io/wdd231/chamber/images/logo/haribon.webp">
+    <meta property="og:site_name" content="Haribon Chamber of Commerce Join page">
+    <meta property="og:title" content="Haribon Chamber of Commerce Join page">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mcmonde.github.io/wdd231/chamber/join.html">
+    <meta name="twitter:card" content="The Haribon Chamber of Commerce join page. Class Project for WDD 231.">
+    <meta name="twitter:image:alt" content="The Haribon Chamber of Commerce join page. Class Project for WDD 231.">
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Font Embed Code -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/header-mobile.css">
+    <link rel="stylesheet" href="styles/thank-you.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/footer-mobile.css">
+
+    <!-- Scripts -->
+    <script src="scripts/menu.js" type="module"></script>
+    <script src="scripts/directory.js" type="module"></script>
+    <script src="scripts/join.js" type="module"></script>
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo/haribon.webp" alt="haribon logo"></a>
+            <div>
+                <h1>Haribon</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-menu" id="navMenu">
+                <li ><a href="index.html" >Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="active"><a href="join.html">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+            <div class="mobile-menu" aria-label="Mobile Menu">
+                <div class="hamburger" id="hamburgerMenu" aria-label="Toggle Navigation">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<main class="thank-you-container">
+    <section class="thank-you-message">
+        <h1>Thank You for Joining!</h1>
+        <p>We appreciate your interest in becoming a member of the Haribon Chamber of Commerce. Your application has been successfully submitted, and we'll be in touch shortly.</p>
+
+        <a href="index.html" class="button">Back to Home</a>
+    </section>
+</main>
+<footer>
+    <p>© <span id="currentYear"></span> Mc Monde Meliton, Philippines</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+</footer>
+</body>
+</html>
