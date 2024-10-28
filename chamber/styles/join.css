@@ -1,4 +1,3 @@
-/* Form */
 .join-container {
     display: flex;
     justify-content: center;
@@ -38,7 +37,6 @@ form select {
     padding: 0.3rem;
     border: 1px solid black;
     border-left-width: 5px;
-    border-left-color: black;
     font-size: 1rem;
     color: gray;
     width: 300px;
@@ -54,7 +52,6 @@ form textarea:focus {
 form input[type="radio"] {
     margin: 0.3rem;
 }
-
 form input:required {
     border-left-color: red;
 }
@@ -65,7 +62,6 @@ form input:focus {
 form input:required:valid {
     border-left-color: green;
 }
-
 form input[type="submit"] {
     align-self: center;
     border: none;
@@ -88,34 +84,27 @@ form input[type="submit"] {
     padding: 4px;
     animation: button-appearance 1s 0.5s;
 }
-/* Style for the radio button group */
 .form-section h3 {
     margin-top: 20px;
     font-size: 18px;
 }
-
 .form-section label {
     font-size: 16px;
     margin-left: 8px;
 }
-
-/* Align radio buttons with labels */
 .radio-group {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
 }
-
 .radio-item {
     display: flex;
     align-items: center;
     margin-bottom: 5px;
 }
-
 .radio-item input[type="radio"] {
     margin-right: 10px; /* Space between the radio button and label */
 }
-
 @keyframes membership-appearance {
     0% {
         margin: 96px 24px;
@@ -152,27 +141,22 @@ form input[type="submit"] {
 button:hover {
     cursor: pointer;
 }
-/* Remove blur effect; apply transparent color overlay instead */
 .modal-overlay {
-    position: relative; /* Ensure normal stacking when modal is inactive */
+    position: relative;
 }
-
 .modal-background {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 1); /* Adjust opacity and color as needed */
+    background: rgba(0, 0, 0, 1);
     z-index: 1;
     display: none;
 }
-
 .modal-background.active {
     display: block;
 }
-
-/* Style for the dialog/modal */
 #membership-dialog {
     margin: auto;
     width: 300px;
@@ -183,4 +167,3 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     z-index: 2;
 }
-
