@@ -1,0 +1,176 @@
+:root {
+    --primary-color: #F24F13;
+    --secondary-color: #8C2A14;
+    --accent1-color: #91B7D9;
+    --accent2-color: #F2A25C;
+    --accent3-color: #F27244;
+
+    --p-color: black;
+
+    --heading-font: "Oswald", arial;
+    --paragraph-font: "Open Sans", sans-serif;
+}
+body {
+    font-family: var(--paragraph-font), serif;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+main{
+    max-width: 900px;
+    margin: 0 auto;
+}
+img {
+    display: block;
+    margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font), serif;
+}
+h2 {
+    text-align: center;
+}
+header {
+    padding: 4px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+}
+header p {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0;
+    color: white;
+}
+div {
+    transition: all 0.3s ease;
+}
+div:hover {
+    background-color: var(--accent1-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+p {
+    font-family: var(--paragraph-font), serif;
+    color: var(--p-color);
+    padding: 1em;
+}
+.scenarios {
+    margin: 0 auto;
+    max-width: 30vw;
+    text-align: left;
+}
+.scenarios p {
+    margin: 0;
+    padding: 0.5rem;
+}
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+.colors th {
+    background-color: #999;
+}
+.colors td {
+    width: 20%;
+    height: 3em;
+}
+.primary p, .secondary p, .accent1 p,
+.accent2 p, .accent3 p {
+    display: inline;
+    background-color: white;
+    padding: 0.2rem;
+    border-radius: 5px;
+}
+
+.primary {
+    background-color: var(--primary-color);
+}
+.secondary {
+    background-color: var(--secondary-color);
+}
+.accent1 {
+    background-color: var(--accent1-color);
+}
+.accent2 {
+    background-color: var(--accent2-color);
+}
+.accent3 {
+    background-color: var(--accent3-color);
+}
+
+nav {
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+}
+nav {
+    list-style-type: none;
+    display: flex;
+}
+nav a {
+    min-width: 120px;
+    text-decoration: none;
+    color: white;
+}
+nav a:hover {
+    color: black;
+    background-color: var(--accent3-color);
+}
+.sitemap {
+    display: grid;
+    justify-content: center;
+
+    grid-template-columns: repeat(6, 15%);
+    grid-template-rows: 3em 1.5em 1.5em 3em;
+    grid-template-areas:
+    ". . home home . ."
+    ". . . top . ."
+    ". left left right right ."
+    "page2 page2 . . page3 page3";
+}
+.sitemap > div {
+    text-align: center;
+}
+.sm-home {
+    grid-area: home;
+    background-color: #ccc;
+    line-height: 3em;
+}
+.sm-page2 {
+    grid-area: page2;
+    background-color: #ccc;
+    line-height: 3em;
+}
+.sm-page3 {
+    grid-area: page3;
+    background-color: #ccc;
+    line-height: 3em;
+}
+
+.top {
+    grid-area: top;
+    border-left: 1px solid;
+}
+
+.left {
+    grid-area: left;
+    border-top: 1px solid;
+    border-left: 1px solid;
+}
+
+.right {
+    grid-area: right;
+    border-top: 1px solid;
+    border-right: 1px solid;
+}
+
+.main-frames,
+.second-frames,
+.third-frames {
+    display: flex;
+    justify-content: space-evenly;
+}
