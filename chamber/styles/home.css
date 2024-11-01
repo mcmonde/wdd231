@@ -1,3 +1,6 @@
+main h2 {
+    text-align: center;
+}
 /* Carousel Styles */
 .carousel {
     position: relative;
@@ -5,24 +8,20 @@
     margin: 20px auto; /* Center the carousel */
     overflow: hidden;
 }
-
 .carousel-inner {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
-
 .carousel-item {
     min-width: 100%;
     box-sizing: border-box;
     position: relative;
 }
-
 .carousel-item img {
     width: 100%;
     height: auto;
     display: block;
 }
-
 .carousel-control {
     position: absolute;
     top: 50%;
@@ -38,11 +37,58 @@
     transform: translateY(-50%);
     font-size: 24px;
 }
-
 .carousel-control.prev {
     left: 10px;
 }
-
 .carousel-control.next {
     right: 10px;
+}
+
+/* home.css */
+.detail-section {
+    display: flex;
+    justify-content: space-between; /* Space between the sections */
+    align-items: flex-start; /* Align items at the start of the flex container */
+    margin: 20px 0; /* Add some vertical spacing */
+}
+
+.detail-section > div {
+    flex: 1; /* Allow each section to grow equally */
+    margin: 0 10px; /* Horizontal margin between sections */
+    background-color: var(--accent1-color); /* Optional background color for sections */
+    padding: 20px; /* Padding inside sections */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.detail-section h3 {
+    margin-bottom: 15px; /* Space below the headings */
+    font-size: 1.5rem; /* Heading size */
+}
+
+.info-weather {
+    margin-top: 10px; /* Space above the weather info */
+}
+
+.info-weather-forecast {
+    margin-top: 10px; /* Space above the forecast info */
+}
+
+/* Adjust the current weather image */
+#weather-icon {
+    display: block; /* Center the image */
+    margin: 0 auto 10px auto; /* Center and add bottom margin */
+    max-width: 100%; /* Responsive image */
+}
+
+#current-temp, #temp-max, #temp-min, #sunrise, #sunset {
+    font-weight: bold; /* Make temperature bold */
+}
+
+/* Additional styles for better text visibility */
+.info-weather p {
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+.info-weather-forecast p {
+    margin: 5px 0; /* Space between forecast items */
 }

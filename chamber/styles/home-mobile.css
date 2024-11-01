@@ -1,0 +1,37 @@
+/* home-mobile.css */
+@media screen and (max-width: 768px) {
+    .detail-section {
+        display: flex;
+        flex-direction: column; /* Stack sections vertically */
+        align-items: stretch; /* Stretch sections to fill the container */
+        margin: 10px 0; /* Reduced vertical spacing */
+    }
+
+    .detail-section > div {
+        margin: 0 0 10px 0; /* Only bottom margin for spacing */
+        background-color: var(--accent1-color); /* Optional background color for sections */
+        padding: 15px; /* Adjust padding for mobile */
+        border-radius: 8px; /* Maintain rounded corners */
+    }
+
+    .detail-section h3 {
+        font-size: 1.5rem; /* Heading size */
+    }
+
+    .detail-section h3 {
+        font-size: 1.5rem; /* Heading size */
+    }
+
+    /* Adjust the current weather image */
+    #weather-icon {
+        width: 70px; /* Smaller image for mobile */
+        height: 70px; /* Adjust height accordingly */
+        display: block; /* Center the image */
+        margin: 0 auto 10px auto; /* Center and add bottom margin */
+    }
+
+    .info-weather p, .info-weather-forecast p {
+        margin: 5px 0; /* Space between paragraphs */
+    }
+}
+

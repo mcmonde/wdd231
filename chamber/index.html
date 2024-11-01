@@ -38,6 +38,7 @@
     <!-- Scripts -->
     <script src="scripts/script.js" defer></script>
     <script src="scripts/menu.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 <body>
 <header>
@@ -75,8 +76,8 @@
         <div class="carousel-control prev" id="prevSlide">&lt;</div>
         <div class="carousel-control next" id="nextSlide">&gt;</div>
     </section>
+    <h2>Home</h2>
     <section class="detail-section">
-        <h2>HOME</h2>
         <div id="events">
             <h3>Events</h3>
             <div class="event-list">
@@ -85,10 +86,28 @@
         </div>
         <div id="current-weather">
             <h3>Current Weather</h3>
-
+            <img id="weather-icon"
+                 src=""
+                 alt="weather icon"
+                 width="96"
+                 height="96"
+            >
+            <div class="info-weather">
+                <p id="current-temp">Temp:<b>-</b>°C</p>
+                <p id="current-desc">- -</p>
+                <p id="temp-max">Max: -°C</p>
+                <p id="temp-min">Min: -°C</p>
+                <p id="sunrise">Sunrise: --:--</p>
+                <p id="sunset">Sunset: --:--</p>
+            </div>
         </div>
         <div id="weather-forecast">
             <h3>Weather Forecast</h3>
+            <div class="info-weather-forecast">
+                <p id="first-day">Monday: <b>-°C</b></p>
+                <p id="second-day">Wednesday: <b>-°C</b></p>
+                <p id="third-day">Thursday: <b>-°C</b></p>
+            </div>
         </div>
     </section>
     <section id="patrons">
