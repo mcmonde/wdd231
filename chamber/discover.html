@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Haribon Chamber of Commerce Discover page</title>
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="The Haribon Chamber of Commerce Discover page. Class Project for WDD 231.">
+    <meta name="author" content="Mc Monde Meliton">
+
+    <!-- Embed Data -->
+    <meta property="og:description" content="The Haribon Chamber of Commerce discover page. Class Project for WDD 231.">
+    <meta property="og:image" content="https://mcmonde.github.io/wdd231/chamber/images/logo/haribon.webp">
+    <meta property="og:site_name" content="Haribon Chamber of Commerce Discover page">
+    <meta property="og:title" content="Haribon Chamber of Commerce Discover page">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mcmonde.github.io/wdd231/chamber/discover.html">
+    <meta name="twitter:card" content="The Haribon Chamber of Commerce discover page. Class Project for WDD 231.">
+    <meta name="twitter:image:alt" content="The Haribon Chamber of Commerce discover page. Class Project for WDD 231.">
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Font Embed Code -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/header-mobile.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/discover-mobile.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/footer-mobile.css">
+
+    <!-- Scripts -->
+    <script src="scripts/menu.js" type="module" defer></script>
+    <script src="scripts/discover.js" type="module" defer></script>
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo/haribon.webp" alt="haribon logo"></a>
+            <div>
+                <h1>Haribon</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li class="active"><a href="discover.html">Discover</a></li>
+            </ul>
+            <div class="mobile-menu" aria-label="Mobile Menu">
+                <div class="hamburger" id="hamburgerMenu" aria-label="Toggle Navigation">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<main class="main-discover">
+    <div class="side">
+        <div class="demographic-data">
+            <h3>Demographics</h3>
+            <hr />
+            <p>Davao City is one of the largest cities in the Philippines.</p>
+            <p><b>Population:</b>1.78M</p>
+            <p><b>Male:</b>50.7%</p>
+            <p><b>Female:</b>49.3%</p>
+            <p><b>Working Age:</b>15-64</p>
+            <p><b>House Income:</b>368,450</p>
+        </div>
+        <div class="upcoming-event">
+            <h3>Upcoming Event</h3>
+            <hr />
+            <img
+                    src="images/discover/pasko-fiesta.webp"
+                    alt="Pasko Fiesta"
+                    width="300"
+                    loading="lazy"
+            />
+            <p><b>Pasko Fiesta</b></p>
+            <p><b>Date:</b> December 24, 2024</p>
+            <p><b>Location:</b> Davao City Hall.</p>
+            <p><b>Admission:</b> Free event</p>
+        </div>
+        <div class="calendar"></div>
+    </div>
+    <div class="attractions-container">
+        <h2 class="visit-locator"></h2>
+
+        <h2>Explore Davao City Attractions</h2>
+        <div class="attractions-card-container">
+            <div class="attraction-card">
+                <img
+                        src="images/discover/philippine-eagle-foundation.webp"
+                        alt="Philippine Eagle photo"
+                        width="500"
+                        loading="lazy"
+                >
+                <p>Philippine Eagle Foundation</p>
+            </div>
+            <div class="attraction-card">
+                <img
+                        src="images/discover/philippines-crocodile-park.webp"
+                        alt="Philippines Crocodile park photo"
+                        width="500"
+                        loading="lazy"
+                >
+                <p>Philippines Crocodile Park</p>
+            </div>
+            <div class="attraction-card">
+                <img
+                        src="images/discover/davao-peoples-park.webp"
+                        alt="Davao Peoples Park photo"
+                        width="500"
+                        loading="lazy"
+                >
+                <p>Davao People's Park</p>
+            </div>
+            <div class="attraction-card">
+                <img
+                        src="images/discover/samal-island.webp"
+                        alt="Samal Island photo"
+                        width="500"
+                        loading="lazy"
+                >
+                <p>Samal Island</p>
+            </div>
+            <div class="attraction-card">
+                <img
+                        src="images/discover/mount-apo.webp"
+                        alt="Mount Apo photo"
+                        width="500"
+                        loading="lazy"
+                >
+                <p>Mount Apo</p>
+            </div>
+            <div class="attraction-card">
+                <img
+                        src="images/discover/hagimit-falls.webp"
+                        alt="Hagimit Falls photo"
+                        width="500"
+                        loading="lazy"
+                >
+                <p>Hagimit Falls</p>
+            </div>
+        </div>
+    </div>
+
+</main>
+<footer>
+    <p>© <span id="currentYear"></span> Mc Monde Meliton, Philippines</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+</footer>
+</body>
+</html>

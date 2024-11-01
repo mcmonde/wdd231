@@ -1,4 +1,4 @@
-    :root {
+:root {
     --primary-color: #22577A;
     --secondary-color: #1B3172;
     --accent1-color: #CED5E3;
@@ -9,6 +9,10 @@
     --nav-link-color: #38A3A5;
     --nav-hover-link-color: #fff;
     --nav-hover-background-color: #1C3F80;
+    --calendar-date-hover-color: #505050;
+    --calendar-today-color: #125286;
+    --black-opacity: rgb(0, 0, 0, 0.1);
+    --card-border: rgb(109, 109, 109);
 }
 * {
     margin: 0;
