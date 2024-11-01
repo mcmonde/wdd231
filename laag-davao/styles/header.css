@@ -1,0 +1,105 @@
+:root {
+    --primary-color: #F24F13;
+    --secondary-color: #8C2A14;
+    --accent1-color: #91B7D9;
+    --accent2-color: #F2A25C;
+    --accent3-color: #F27244;
+    --heading-font: "Oswald", arial;
+    --paragraph-font: "Open Sans", sans-serif;
+    --nav-background-color: #CED5E3;
+    --nav-link-color: #38A3A5;
+    --nav-hover-link-color: #fff;
+    --nav-hover-background-color: #1C3F80;
+    --calendar-date-hover-color: #505050;
+    --calendar-today-color: #125286;
+    --black-opacity: rgb(0, 0, 0, 0.1);
+    --card-border: rgb(109, 109, 109);
+    --p-color: black;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--paragraph-font), serif;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+header .container .logo {
+    display: flex;
+}
+header .container .logo img {
+    width: 32px;
+    border-radius: 50%;
+}
+header .container .logo h1 {
+    margin: -8px 0 -8px 4px;
+}
+header .container .logo p {
+    font-size: 12px;
+    margin: 0 0 -2px 4px;
+}
+main {
+    padding-top: 80px;
+    min-height: calc(100vh - 120px);
+    background-color: #f9f9f9;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+h1 {
+    font-size: 1.5rem;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    position: relative;
+}
+.nav-menu li {
+    margin: 0 10px;
+}
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.nav-menu li a:hover {
+    color: var(--nav-link-color);
+}
+li.active {
+    text-decoration: underline;
+    background: #f9f9f9;
+    padding: 8px 8px 22px 8px;
+    margin-bottom: -10px;
+    border-radius: 4px 4px 0 0;
+}
+li.active a {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.mobile-menu {
+    display: none;
+}

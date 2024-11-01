@@ -1,0 +1,63 @@
+@media (max-width: 768px) {
+    .join-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 80px 10px 10px 10px;
+    }
+    .join-container h1 {
+        font-size: 1.8em;
+        margin: 10px 0;
+        text-align: center;
+    }
+    .form-section {
+        width: 100%;
+        padding: 10px;
+    }
+    .form-section form {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-section label,
+    .form-section input,
+    .form-section textarea,
+    .form-section h3 {
+        font-size: 1em;
+        width: 100%;
+    }
+    .form-section .radio-group {
+        display: flex;
+        flex-direction: column;
+    }
+    .membership-section {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .membership {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+    .form-section .radio-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .form-section .radio-group .radio-item {
+        display: flex;
+        align-items: center;
+        width: 100%; /* Occupy full width */
+        padding: 5px 0;
+    }
+    .form-section .radio-group .radio-item input[type="radio"] {
+        flex: 1;
+        margin-right: 0;
+    }
+    .form-section .radio-group .radio-item label {
+        flex: 3;
+    }
+}

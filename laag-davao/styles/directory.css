@@ -1,0 +1,96 @@
+main .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    column-gap: 30px;
+}
+.destination-card {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.destination-card img {
+    width: 100%;
+    height: auto;
+}
+.details {
+    padding: 10px 0;
+}
+.details h3 {
+    margin: 0;
+    font-size: 20px;
+}
+.details p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #666;
+}
+.filter-container {
+    margin: 20px auto;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filter-container label {
+    font-size: 18px;
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+#destinationType {
+    border: 2px solid var(--primary-color);
+    padding: 10px 15px;
+    font-size: 16px;
+    color: var(--primary-color);
+    background-color: #fff;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+#destinationType:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+    background-color: #f0f8ff;
+}
+.option-highlight {
+    background-color: #eaf2f8;
+    color: var(--secondary-color);
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.destination-card {
+    animation: fadeIn 0.5s ease-out;
+}
+.icon {
+    font-size: 3em;
+    cursor: pointer;
+    color: #22577A;
+    margin: 4px;
+}
+.icon:hover {
+    font-size: 3em;
+    cursor: pointer;
+    color: white;
+    background: #22577A;
+    margin: 4px;
+}
+main.list-view .container {
+    display: block;
+}
+main.list-view .destination-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+main.list-view .destination-card img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+main.list-view .details {
+    flex-grow: 1;
+}

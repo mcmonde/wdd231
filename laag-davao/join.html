@@ -1,0 +1,143 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Haribon Chamber of Commerce Join page</title>
+    <link rel="icon" href="images/favicon.ico">
+    <meta name="description" content="The Haribon Chamber of Commerce join page. Class Project for WDD 231.">
+    <meta name="author" content="Mc Monde Meliton">
+
+    <!-- Embed Data -->
+    <meta property="og:description" content="The Haribon Chamber of Commerce join page. Class Project for WDD 231.">
+    <meta property="og:image" content="https://mcmonde.github.io/wdd231/chamber/images/logo/haribon.webp">
+    <meta property="og:site_name" content="Haribon Chamber of Commerce Join page">
+    <meta property="og:title" content="Haribon Chamber of Commerce Join page">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mcmonde.github.io/wdd231/chamber/join.html">
+    <meta name="twitter:card" content="The Haribon Chamber of Commerce join page. Class Project for WDD 231.">
+    <meta name="twitter:image:alt" content="The Haribon Chamber of Commerce join page. Class Project for WDD 231.">
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Font Embed Code -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/header-mobile.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-mobile.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/footer-mobile.css">
+
+    <!-- Scripts -->
+    <script src="scripts/menu.js" type="module"></script>
+    <script src="scripts/join.js" type="module"></script>
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo/haribon.webp" alt="haribon logo"></a>
+            <div>
+                <h1>Laag Tas Davao!</h1>
+                <p>Explore Davao</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-menu" id="navMenu">
+                <li ><a href="index.html" >Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="active"><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+            <div class="mobile-menu" aria-label="Mobile Menu">
+                <div class="hamburger" id="hamburgerMenu" aria-label="Toggle Navigation">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<main class="join-container">
+    <h1>Join</h1>
+    <section class="form-section">
+        <form method="GET" action="thank-you.html" class="designOne">
+            <div>
+                <label for="first_name" aria-label="First Name">First Name</label>
+                <input type="text" id="first_name" name="first_name" required autocomplete="given-name" title="Your First Name">
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="last_name" required autocomplete="family-name" title="Your Last Name">
+                <label for="organization_title">Organization Title</label>
+                <input type="text" id="organization_title" name="organization_title" autocomplete="organization-title" pattern="^[a-zA-Z\s\-]{7,}$" title="Your Organization Title">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="anton88@gmail.com" title="Your Email" autocomplete="email">
+                <label for="phone">Cell Phone</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" title="A Phone Number with dashes" placeholder="+63 912 345 6789">
+                <label for="organization_name">Organization name</label>
+                <input type="text" id="organization_name" name="organization_name" required autocomplete="organization" title="Your Organization Name">
+                <h3>Select Membership Level</h3>
+                <div class="radio-group">
+                    <div class="radio-item">
+                        <input type="radio" id="np_membership" name="membership" value="NP" checked>
+                        <label for="np_membership">NP Membership</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="bronze_membership" name="membership" value="Bronze">
+                        <label for="bronze_membership">Bronze Membership</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="silver_membership" name="membership" value="Silver">
+                        <label for="silver_membership">Silver Membership</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="gold_membership" name="membership" value="Gold">
+                        <label for="gold_membership">Gold Membership</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label for="description">Organization's Description:</label>
+                <textarea id="description" name="description" rows="5" required
+                ></textarea>
+            </div>
+            <input type="hidden" id="timestamp" name="timestamp" >
+           <div>
+               <input type="submit" value="Join" >
+           </div>
+        </form>
+    </section>
+    <section class="membership-section">
+        <div class="membership">
+            <p>Non Profit Membership Level</p>
+            <button id="np-button">Learn More</button>
+        </div>
+        <div class="membership">
+            <p>Bronze Membership Level</p>
+            <button id="bronze-button">Learn More</button>
+        </div>
+        <div class="membership">
+            <p>Silver Membership Level</p>
+            <button id="silver-button">Learn More</button>
+        </div>
+        <div class="membership">
+            <p>Gold Membership Level</p>
+            <button id="gold-button">Learn More</button>
+        </div>
+    </section>
+    <dialog id="membership-dialog"></dialog>
+</main>
+<footer>
+    <p>© <span id="currentYear"></span> Mc Monde Meliton, Philippines</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+</footer>
+</body>
+</html>

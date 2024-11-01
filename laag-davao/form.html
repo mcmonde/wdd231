@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feedback Form</title>
+    <meta name="description" content="Feedback form for rating and reviewing destinations">
+    <meta name="author" content="Mc Monde Meliton">
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/header-mobile.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Davao Nature Escapades</h1>
+        <nav>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="form.html">Rate Us</a></li>
+            </ul>
+            <div class="mobile-menu" aria-label="Mobile Menu">
+                <div class="hamburger" id="hamburgerMenu" aria-label="Toggle Navigation">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<main>
+    <form action="review.html" method="get" class="form-container">
+        <label>
+            Destinations
+            <span class="red-asterisk">*</span>
+            <select name="destination" id="destination" required>
+                <option id="first-option" value="" disabled selected>Select a destination ...</option>
+            </select>
+        </label>
+        <label>
+            Overall Rating
+            <span class="red-asterisk">*</span>
+        </label>
+        <div class="stars-wrapper">
+            <div class="stars">
+                <input type="radio" id="five-star" name="stars" value="5" required><label for="five-star"></label>
+                <input type="radio" id="four-star" name="stars" value="4" required><label for="four-star"></label>
+                <input type="radio" id="three-star" name="stars" value="3" required><label for="three-star"></label>
+                <input type="radio" id="two-star" name="stars" value="2" required><label for="two-star"></label>
+                <input type="radio" id="one-star" name="stars" value="1" required><label for="one-star"></label>
+            </div>
+        </div>
+        <div id="star-error" class="error-message"></div>
+        <label>Written Review <span class="optional">(Optional)</span>
+            <textarea name="review" id="review" rows="8"></textarea>
+        </label>
+        <label>Your Name <span class="optional">(Optional)</span>
+            <input type="text" name="name" id="name">
+        </label>
+        <input type="submit" value="Post Review">
+    </form>
+</main>
+<script src="scripts/script.js" defer></script>
+<footer>
+    <p>© <span id="currentYear"></span> Mc Monde Meliton, Philippines</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+</footer>
+</body>
+</html>

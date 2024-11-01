@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Laag Tas Davao Home Page</title>
+    <link rel="icon" href="images/favicon.ico">
+    <meta name="description" content="The Laag Tas Davao Home Page.">
+    <meta name="author" content="Mc Monde Meliton">
+
+    <!-- Embed Data -->
+    <meta property="og:description" content="The Laag Tas Davao Home Page.">
+    <meta property="og:image" content="https://mcmonde.github.io/wdd231/chamber/images/logo/haribon.webp">
+    <meta property="og:site_name" content="Laag Tas Davao Home Page">
+    <meta property="og:title" content="Laag Tas Davao Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mcmonde.github.io/wdd231/laag-davao">
+    <meta name="twitter:card" content="The Laag Tas Davao Home Page.">
+    <meta name="twitter:image:alt" content="The Laag Tas Davao Home Page.">
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Font Embed Code -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/header-mobile.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-mobile.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/footer-mobile.css">
+
+    <!-- Scripts -->
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo/haribon.webp" alt="haribon logo" style="border-radius:50%"></a>
+            <div>
+                <h1>Laag Tas Davao!</h1>
+                <p>Explore Davao</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-menu" id="navMenu">
+                <li class="active"><a href="index.html" >Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+            <div class="mobile-menu" aria-label="Mobile Menu">
+                <div class="hamburger" id="hamburgerMenu" aria-label="Toggle Navigation">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<main>
+    <!-- Carousel Section -->
+    <section class="carousel">
+        <div class="carousel-inner" id="carouselInner">
+            <!-- Carousel items will be dynamically inserted here -->
+        </div>
+        <div class="carousel-control prev" id="prevSlide">&lt;</div>
+        <div class="carousel-control next" id="nextSlide">&gt;</div>
+    </section>
+    <h2>Home</h2>
+    <section class="detail-section">
+        <div id="events">
+            <h3>Events</h3>
+            <div class="event-list">
+
+            </div>
+        </div>
+        <div id="current-weather">
+            <h3>Current Weather</h3>
+            <img id="weather-icon"
+                 src=""
+                 alt="weather icon"
+                 width="96"
+                 height="96"
+            >
+            <div class="info-weather">
+                <p id="current-temp">Temp:<b>-</b>°C</p>
+                <p id="current-desc">- -</p>
+                <p id="temp-max">Max: -°C</p>
+                <p id="temp-min">Min: -°C</p>
+                <p id="sunrise">Sunrise: --:--</p>
+                <p id="sunset">Sunset: --:--</p>
+            </div>
+        </div>
+        <div id="weather-forecast">
+            <h3>Weather Forecast</h3>
+            <div class="info-weather-forecast">
+                <p id="first-day">Monday: <b>-°C</b></p>
+                <p id="second-day">Wednesday: <b>-°C</b></p>
+                <p id="third-day">Thursday: <b>-°C</b></p>
+            </div>
+        </div>
+    </section>
+    <section id="patrons">
+
+    </section>
+</main>
+<footer>
+    <p>© <span id="currentYear"></span> Mc Monde Meliton, Philippines</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+</footer>
+</body>
+</html>
