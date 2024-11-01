@@ -1,0 +1,64 @@
+/* Mobile viewport adjustments */
+@media (max-width: 768px) {
+    /* Center text and reduce padding for smaller screens */
+    h2 {
+        text-align: center;
+    }
+    .main-discover {
+        display: flex;
+        flex-direction: column;
+        padding: 80px 16px 16px 16px; /* Adjust padding */
+    }
+
+    /* Stack elements vertically in side section */
+    .side {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 16px; /* Reduced gap */
+        width: 100%;
+        margin: 16px 0;
+    }
+
+    /* Set card container to 100% width */
+    .attractions-card-container {
+        padding: 8px;
+        flex-direction: column;
+        row-gap: 16px;
+        column-gap: 0;
+    }
+
+    /* Set demographic and upcoming event containers to fit mobile width */
+    .demographic-data,
+    .upcoming-event,
+    .calendar {
+        width: 100%;
+        margin: 0 auto;
+        padding: 8px;
+    }
+
+    /* Reduce calendar width and layout adjustments */
+    .calendar {
+        width: 100%;
+    }
+    .calendar-inner {
+        padding: 8px;
+    }
+    .calendar .calendar-inner .calendar-body {
+        grid-template-columns: repeat(7, 1fr);
+    }
+    .calendar .calendar-inner .calendar-controls {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* Reduce padding and margin on attraction cards */
+    .attraction-card {
+        margin: 0 auto;
+        width: 90%; /* Scale down card width */
+        transition: transform 0.3s ease;
+    }
+
+    /* Ensure hovered card effect is maintained on mobile */
+    .attractions-card-container:hover .attraction-card:not(:hover) {
+        filter: blur(2px); /* Slight blur for mobile */
+    }
+}

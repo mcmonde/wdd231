@@ -78,7 +78,7 @@ h2 {
 /* Calendar */
 .calendar {
     width: 450px;
-    background: var(--black-opacity);
+    background: var(--accent1-color);
     overflow: hidden;
     border: 1px solid var(--card-border);
     border-radius: 4px;
