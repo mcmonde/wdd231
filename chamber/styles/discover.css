@@ -8,7 +8,7 @@ h2 {
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: start;
-    padding: 16px;
+    padding: 80px 16px 16px 16px;
 }
 .side {
     display: grid;
@@ -63,7 +63,13 @@ h2 {
     transition: transform 0.3s ease;
 }
 .attraction-card:hover {
-    transform: scale(1.03);
+    transform: scale(1.05);
+    filter: none; /* Ensure no blur on the hovered card */
+    z-index: 1;
+}
+.attractions-card-container:hover .attraction-card:not(:hover) {
+    filter: blur(3px); /* Adjust as needed */
+    transition: filter 0.3s ease;
 }
 .attraction-card img {
     border-radius: 4px;

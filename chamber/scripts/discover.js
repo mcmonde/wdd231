@@ -1,11 +1,7 @@
 
 // Footer
-document.querySelector(
-    "#currentyear"
-).innerHTML = `&copy ${new Date().getFullYear()}`;
-document.querySelector(
-    "#lastModified"
-).innerHTML = `Last Update: ${document.lastModified}`;
+document.getElementById("currentYear").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = document.lastModified;
 
 // Calendar
 function CalendarControl() {
